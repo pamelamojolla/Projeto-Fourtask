@@ -8,5 +8,17 @@ namespace Projeto_FourTask___Avaliação_Final.Controllers
         {
             return View();
         }
+
+        public IActionResult Aceitar()
+        {
+            return View();
+        }
+
+        public IActionResult Editar()
+        {
+            return View();
+        }
     }
+
+
 }

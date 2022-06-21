@@ -15,6 +15,14 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\pmojolla\source\repos\Projeto FourTask - Avaliação Final\Projeto FourTask - Avaliação Final
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/pmojolla/source/repos/Projeto FourTask - Avaliação Final/Projeto FourTask - Avaliação Final/Views/Equipe/Aceitar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXF1aXBlXEFjZWl0YXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pmojolla/source/repos/Projeto FourTask - Avaliação Final/Projeto FourTask - Avaliação Final/Views/Equipe/Editar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXF1aXBlXEVkaXRhci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/pmojolla/source/repos/Projeto FourTask - Avaliação Final/Projeto FourTask - Avaliação Final/Views/Equipe/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXF1aXBlXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
