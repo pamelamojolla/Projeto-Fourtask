@@ -1,13 +1,9 @@
-﻿@model Tarefa
+﻿@model CadastrarTarefaViewModel
 
-<h1>Editar Tarefas</h1>
+<h1>Cadastrar Tarefa</h1>
 
-<form asp-action="Salvar">
 
-    @Html.HiddenFor(x=>x.TarefaId)
-    @Html.HiddenFor(x=>x.DataCriacao)
-    @Html.HiddenFor(x=>x.Usuario)
-    @Html.HiddenFor(x=>x.Equipe)
+<form asp-action="CriarTarefa">
 
     <div class="mb-3">
         <label asp-for="@Model.Titulo" class="form-label">  </label>
@@ -24,8 +20,11 @@
         <input asp-for="@Model.DataLimite" class="form-control" value=@Model.DataLimite />
     </div>
 
-    <input type="submit" value="Salvar" class="btn btn-primary" />
+    <div class="mb-3">
+        <label class="form-label"> Equipe </label>
+        @Html.DropDownListFor(m => m.EquipeId, @Model.Equipes.Select(x => new SelectListItem(x.Nome, x.EquipeId.ToString())), "Selecione a equipe",  new { @class="form-control" })
+    </div>
 
-    @Html.ActionLink("Remover", "Remover", new {id=@Model.TarefaId}, new {@class="btn btn-danger"})
+    <input type="submit" value="Salvar" class="btn btn-primary" />
 
 </form>

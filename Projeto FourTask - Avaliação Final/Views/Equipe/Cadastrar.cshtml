@@ -6,11 +6,6 @@
 
 
 <form asp-action="Cadastrar">
-    <div class="mb-3">
-        <label asp-for="EquipeId" class="form-label">  </label>
-        <input asp-for="EquipeId" class="form-control">
-                 
-    </div>
 
     <div class="mb-3">
         <label asp-for="Nome" class="form-label">  </label>
@@ -19,27 +14,21 @@
 
     <div class="mb-3">
         <label asp-for="Senha" class="form-label">  </label>
-        <input asp-for="Senha" class="form-control" />
+        <input asp-for="Senha" class="form-control" value=@Model.Senha />
     </div>
 
     <div class="mb-3">
         <label asp-for="Descricao" class="form-label">  </label>
-        <input asp-for="Descricao" class="form-control" />
+        <input asp-for="Descricao" class="form-control" value=@Model.Descricao />
     </div>
 
     <div class="mb-3">
         <label asp-for="AreaAtuacao" class="form-label">  </label>
         <select asp-for="AreaAtuacao" asp-items="@Html.GetEnumSelectList<AreaAtuacao>()" class="form-control">
             <option>Selecione</option>
-        </select>  
-    </div>
-
-    <div class="mb-3">
-        <label asp-for="DataCriacao" class="form-label">  </label>
-        <input asp-for="DataCriacao" class="form-control" />
+        </select>
     </div>
 
     <input type="submit" value="Cadastrar" class="btn btn-primary" />
-
 
 </form>

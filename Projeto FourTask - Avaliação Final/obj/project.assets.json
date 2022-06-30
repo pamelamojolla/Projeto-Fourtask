@@ -10042,11 +10042,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\pmojolla\\source\\repos\\Projeto FourTask - Avaliação Final\\Projeto FourTask - Avaliação Final\\Projeto FourTask - Avaliação Final.csproj",
+      "projectUniqueName": "C:\\Users\\pmojolla\\source\\repos\\Projeto FourTask - Avaliação Final\\Projeto-Fourtask\\Projeto FourTask - Avaliação Final\\Projeto FourTask - Avaliação Final.csproj",
       "projectName": "Projeto FourTask - Avaliação Final",
-      "projectPath": "C:\\Users\\pmojolla\\source\\repos\\Projeto FourTask - Avaliação Final\\Projeto FourTask - Avaliação Final\\Projeto FourTask - Avaliação Final.csproj",
+      "projectPath": "C:\\Users\\pmojolla\\source\\repos\\Projeto FourTask - Avaliação Final\\Projeto-Fourtask\\Projeto FourTask - Avaliação Final\\Projeto FourTask - Avaliação Final.csproj",
       "packagesPath": "C:\\Users\\pmojolla\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\pmojolla\\source\\repos\\Projeto FourTask - Avaliação Final\\Projeto FourTask - Avaliação Final\\obj\\",
+      "outputPath": "C:\\Users\\pmojolla\\source\\repos\\Projeto FourTask - Avaliação Final\\Projeto-Fourtask\\Projeto FourTask - Avaliação Final\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\pmojolla\\AppData\\Roaming\\NuGet\\NuGet.Config",

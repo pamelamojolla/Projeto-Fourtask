@@ -1,16 +1,74 @@
-﻿@model Equipe
+﻿@model ListagemViewModel
 
 <h1>Listagem de Equipes</h1>
 
 <hr />
 
+@if (!string.IsNullOrEmpty(Model.MensagemDeErro))
+{
+    <div class="alert alert-danger" role="alert">
+        @Model.MensagemDeErro
+    </div>
+}
+
 <table class="table">
-    <tr>
-        <th>Nome</th>
-        <th>Senha</th>
-        <th>Descricao</th>
-        <th>Area de Atuacao</th>
-        <th>Data de Criação</th>
+    <tr class="table-secondary">
+        <th scope="row">Id</th>
+        <th scope="row">Nome</th>
+        <th scope="row">Descrição</th>
+        <th scope="row">Área de Atuação</th>
+        <th scope="row">Data de Criação</th>
+        @*<th scope="row">Senha</th>*@
+        <th scope="row"></th>
     </tr>
 
-    </table>
+    @foreach (var item in Model.Equipes)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(x => item.EquipeId)
+            </td>
+            <td>@Html.DisplayFor(x => item.Nome)</td>
+            <td>@Html.DisplayFor(x => item.Descricao)</td>
+            <td>@Html.DisplayFor(x => item.AreaAtuacao)</td>
+            <td>
+                @Html.DisplayFor(x => item.DataCriacao)
+            </td>
+
+            <td>
+                <div class="btn-group" role="group">
+                    <button type="button" onclick="idEquipe.value = @item.EquipeId" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Aceitar
+                    </button>
+                </div>
+            </td>
+        </tr>
+    }
+    @*}*@
+
+</table>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <form asp-action="Entrar">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Informe a senha</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body">
+
+                    <input type="hidden" id="idEquipe" asp-for="EquipeSelecionada" />
+                    <input asp-for="Senha" class="form-control" placeholder="senha da equipe" />
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="submit" class="btn btn-primary">Aceitar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

@@ -5,7 +5,4 @@
         Web, Mobile, Frontend, Backend, FullStack, Gestao, Outros
 
     }
-
 }
-
-

@@ -1,15 +1,13 @@
-﻿namespace Projeto_FourTask___Avaliação_Final.Models
+﻿using Microsoft.AspNetCore.Identity;
+
+namespace Projeto_FourTask___Avaliação_Final.Models
 {
-    public class Usuario
+    public class Usuario : IdentityUser
     {
-        public int UsuarioId { get; set; }
+        public DateTime? DataNascimento { get; set; }
 
-        public string Email { get; set; }
+        public Equipe? Equipe { get; set; }
 
-        public string Senha { get; set; }
-
-        public DateTime DataNascimento { get; set; }
-
-
+        public virtual ICollection<Tarefa> Tarefas { get; set; }
     }
 }

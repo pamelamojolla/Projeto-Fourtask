@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "LOB6xJucrIwLG31Enzo0obBErqv/50jO4FhIMMCTE6swvP9A1Wz0NfYAFbryOMUR3iAVtuBQB7kjvp1wlCAuJQ==",
+  "dgSpecHash": "bY40l1Tw50IEyC8KreIVW4o/GHdFAcHyW4legcMd1JRbFIwt92nG5MZ7M77XX1wbreXQZbsDk/OdH9E7A/pRWA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\pmojolla\\source\\repos\\Projeto FourTask - Avaliação Final\\Projeto FourTask - Avaliação Final\\Projeto FourTask - Avaliação Final.csproj",
+  "projectFilePath": "C:\\Users\\pmojolla\\source\\repos\\Projeto FourTask - Avaliação Final\\Projeto-Fourtask\\Projeto FourTask - Avaliação Final\\Projeto FourTask - Avaliação Final.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\pmojolla\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\pmojolla\\.nuget\\packages\\messagepack\\2.1.152\\messagepack.2.1.152.nupkg.sha512",

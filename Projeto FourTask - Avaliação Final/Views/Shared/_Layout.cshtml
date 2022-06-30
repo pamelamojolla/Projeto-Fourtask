@@ -1,4 +1,9 @@
-﻿<!DOCTYPE html>
+﻿@using Microsoft.AspNetCore.Identity
+
+@inject SignInManager<Usuario> SignInManager
+@inject UserManager<Usuario> UserManager
+
+<!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="utf-8" />
@@ -26,18 +31,25 @@
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                         </li>
                         
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Equipe" asp-action="Index">Equipe</a>
-                        </li>                                 
-                        
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Equipe" asp-action="Cadastrar">Cadastrar Equipe</a>
-                        </li>    
-                        
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Equipe" asp-action="Listagem">Listagem Equipe</a>
-                        </li>    
-                                                                   
+                        @if (SignInManager.IsSignedIn(User))
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Equipe" asp-action="Index">Equipe</a>
+                            </li>                                 
+
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Equipe" asp-action="Cadastrar">Cadastrar Equipe</a>
+                            </li>    
+
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Equipe" asp-action="Listagem">Listagem Equipe</a>
+                            </li>    
+
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Tarefas" asp-action="Cadastrar">Cadastrar Tarefa</a>
+                            </li>
+                        }
+
                     </ul>
                 </div>
             </div>
